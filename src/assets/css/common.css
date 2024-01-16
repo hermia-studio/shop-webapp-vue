@@ -1,0 +1,53 @@
+/* 公共样式 */
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #051733;
+}
+@font-face {
+  font-family: 'PingFangSC-Heavy';
+  src: url(../font//PingFang\ Heavy.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url(../font//pingfangsc-regular.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font:
+    12px/1 PingFangSC-Regular,
+    PingFangSC-Heavy;
+  color: #051733;
+  /* 主题色 */
+  --theme-color: #ff445b;
+}
+
+/* 溢出省略 */
+.common-ellipsis {
+  white-space: nowrap; /*文本不换行*/
+  overflow: hidden; /*超出内容隐藏*/
+  text-overflow: ellipsis; /*文超出内容显示省略号*/
+}
+.common-wrap {
+  width: 323px;
+  min-height: 100px;
+  margin: 12px auto;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+}
