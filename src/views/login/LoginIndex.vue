@@ -126,6 +126,10 @@ const onSubmit = async () => {
             <p>我已阅读并同意<a>《隐私协议》</a>和<a>《免责声明》</a></p>
           </van-checkbox>
         </div>
+        <div class="info">
+          <p>管理员账号：17369245127 密码：123456</p>
+          <p>也可使用自己的手机号进行注册</p>
+        </div>
       </div>
     </div>
   </div>
@@ -256,6 +260,13 @@ const onSubmit = async () => {
           a {
             color: #1472ff;
           }
+        }
+      }
+      .info {
+        margin: 30px;
+        color: #999;
+        p {
+          margin: 10px 0;
         }
       }
     }
