@@ -142,7 +142,7 @@ const onSelectAddress = (addressId: number) => {
   overflow-y: scroll;
   background-color: #f7f8fa;
   .userAddress {
-    padding-top: 10px;
+    margin-top: 10px;
     margin: 12px 16px 62px 16px;
     background: #ffffff;
     border-radius: 4px;
@@ -200,7 +200,7 @@ const onSelectAddress = (addressId: number) => {
   }
   .addAddress {
     position: fixed;
-    bottom: 0;
+    bottom: 50px;
     z-index: 10;
     width: 100%;
     height: 62px;

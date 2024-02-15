@@ -142,6 +142,7 @@ const onUpdate = async () => {
             v-model="reciever"
             name="收货人"
             label="收货人"
+            autocomplete="off"
             placeholder="请填写收货人"
             :rules="[{ required: true, message: '请填写收货人' }]"
           />
@@ -149,6 +150,7 @@ const onUpdate = async () => {
             v-model="phone"
             name="手机号"
             label="手机号"
+            autocomplete="off"
             placeholder="手机号"
             :rules="[{ required: true, message: '请填写收货人手机号' }]"
           />
@@ -158,6 +160,7 @@ const onUpdate = async () => {
             readonly
             name="area"
             label="地区选择"
+            autocomplete="off"
             placeholder="点击选择省市区"
             :rules="[{ required: true, message: '请选择省市区' }]"
             @click="showArea = true"
@@ -175,6 +178,7 @@ const onUpdate = async () => {
             v-model="detailAddress"
             name="详细地址"
             label="详细地址"
+            autocomplete="off"
             placeholder="详细地址"
             :rules="[{ required: true, message: '请填写详细地址' }]"
           />
@@ -264,12 +268,15 @@ const onUpdate = async () => {
   }
   .save {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     z-index: 9;
     width: 100%;
     height: 62px;
     background: #f7f8fa;
+    .saveBtn {
+      bottom: 70px;
+    }
   }
 }
 </style>

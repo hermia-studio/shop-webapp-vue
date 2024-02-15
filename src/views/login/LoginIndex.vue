@@ -127,7 +127,7 @@ const onSubmit = async () => {
           </van-checkbox>
         </div>
         <div class="info">
-          <p>管理员账号：17369245127 密码：123456</p>
+          <p>管理员账号：17369245127 验证码：123456</p>
           <p>也可使用自己的手机号进行注册</p>
         </div>
       </div>
